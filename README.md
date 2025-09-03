@@ -4,7 +4,7 @@ A simple, interactive CLI-based number guessing game written in Python.
 
 ## Project Inspiration
 
-This project is based on the **Number Guessing Game** idea from roadmap.sh’s “Projects” collection. The game involves a computer randomly selecting a number between 1 and 100, and the player tries to guess it within a limited number of attempts. The original project requirements and prompt can be found [here on roadmap.sh](https://roadmap.sh/projects/number-guessing-game). :contentReference[oaicite:0]{index=0}
+This project is based on the **Number Guessing Game** idea from roadmap.sh’s “Projects” collection. The game involves a computer randomly selecting a number between 1 and 100, and the player tries to guess it within a limited number of attempts. The original project requirements and prompt can be found [here on roadmap.sh](https://roadmap.sh/projects/number-guessing-game). 
 
 ---
 
