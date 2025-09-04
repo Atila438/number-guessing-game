@@ -46,7 +46,25 @@ def number_guessing_game():
 
         attempts += 1
         if guess == number:
-                end_time = time.time()
-                duration = round(end_time - start_time, 2)
-                print(f"\nCongratulations! You guessed the number {number} correctly "
-                      f"in {attempts} attempts and {duration} seconds.")
+            end_time = time.time()
+            duration = round(end_time - start_time, 2)
+            print(f"\nCongratulations! You guessed the number {number} correctly "
+                  f"in {attempts} attempts and {duration} seconds.")
+            
+            # Update high score
+            if high_scores[difficulty] is None or attempts < high_scores[difficulty]:
+                high_scores[difficulty] = attempts
+                print(f"New high score for {difficulty} mode: {attempts} attempts!")
+            break
+        elif guess < number:
+            print("Incorrect! The number is greater than your guess.\n")
+        else:
+            print("Incorrect! The number is less than your guess.\n")
+            
+            # Optional hint system (after half of chances used)
+            if attempts == chances // 2:
+                if number % 2 == 0:
+                    print("Hint: The number is even.\n")
+                else:
+                    print("Hint: The number is odd.\n")
+
